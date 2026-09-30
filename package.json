@@ -1,0 +1,30 @@
+{
+  "name": "varshaa-monsoon-intelligence",
+  "version": "1.0.0",
+  "description": "VARSHAA: Hyperlocal Monsoon Intelligence - SIH Prototype",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.js",
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "keywords": [
+    "sih",
+    "monsoon",
+    "agriculture",
+    "hyperlocal",
+    "climate-tech",
+    "crop-advisory"
+  ],
+  "author": "VARSHAA Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
